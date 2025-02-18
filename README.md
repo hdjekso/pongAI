@@ -45,6 +45,6 @@ pthname = '/content/drive/MyDrive/pong_model_checkpoint_200000.pth'  # Load part
 - **Final trained model**: The completely trained model is saved as `PongNoFrameskip-v4-model.pth`.
 
 ## Notes
-- Modify path variables (`pthname`) as needed based on where the notebook and model files are stored in Google Drive.
+- Modify path variables (`pthname`, `saved_name`), as well as the line `torch.save(model.state_dict(), f"/content/drive/My Drive/Colab_Notebooks/Assignments/Deep_Q_Network/saves_2/{frame_idx}_model.pth")` as needed based on where the notebook and model files are stored in Google Drive.
 - Training may take several hours depending on available GPU resources in Colab.
 
