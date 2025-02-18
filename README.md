@@ -3,6 +3,10 @@
 ## Overview
 This notebook trains a Deep Q-Network (DQN) model using PyTorch to play the game Pong. The training process is designed to run in **Google Colab** and requires mounting Google Drive to save checkpoints and the final trained model.
 
+## Demo
+Here is a [demo](https://www.youtube.com/shorts/UxCL6KN8WIk) of the trained pong model (PongNoFrameskip-v4.pth) (green) playing against an opponent AI provided by the `Gym` library (orange), in which the pong model wins 21 - 15 against. 
+[![Video Thumbnail](./pong_thumbnail.jpg)](https://www.youtube.com/shorts/UxCL6KN8WIk)
+
 ## Setup Instructions
 
 1. **Run in Google Colab**
