@@ -23,11 +23,17 @@ This notebook trains a Deep Q-Network (DQN) model using PyTorch to play the game
 ## Training Process
 - The training process involves playing **1 million frames** of Pong.
 - A **partially trained model** is saved every **20,000 frames**.
-- If you want to **continue training from a previous checkpoint**, update the `pthname` variable to use the last saved model instead of `model_pretrained.pth`.
+- If you want to **continue training from a previous checkpoint**, update the `pthname` variable to use the last saved model instead of `model_pretrained.pth`. Additionally, update the `for` loop in the training section to start from the correct frame count. For example, if resuming from **200,000** frames, modify:
+  ```python
+  for frame_idx in range(0, num_frames + 1):
+  ```
+  to:
+  ```python
+  for frame_idx in range(200000, num_frames + 1):
 
 Example:
 ```python
-pthname = '/content/drive/MyDrive/pong_model_checkpoint_200000.pth'  # Resume training from 200K frames
+pthname = '/content/drive/MyDrive/pong_model_checkpoint_200000.pth'  # Load partially trained model and resume training from 200K frames
 ```
 
 ## Testing Your Model
